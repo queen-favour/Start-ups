@@ -17,7 +17,7 @@ export default function Filters({
     <div className="relative border border-gray-100 rounded-md shadow-md  text-white">
       {/* Button to toggle dropdown */}
       <button
-        className="p-2 shadow-md rounded-md dark:bg-dark-blue flex justify-between items-center w-full"
+        className="p-2 shadow-md rounded-md dark:bg-dark-blue flex justify-between items-center w-40"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
         <span className="text-normal">
@@ -32,12 +32,12 @@ export default function Filters({
 
       {/* Dropdown options list */}
       {isDropdownOpen && (
-        <ul className="absolute top-full left-0 mt-2 w-full bg-white dark:bg-dark-blue shadow-md rounded-md z-10">
+        <ul className="absolute top-full left-0 mt-2 w-full bg-white shadow-md rounded-md z-10">
           {options.map(({ displayName, value }) => (
             <li
               key={value}
               onClick={() => handleOptionSelect(value)}
-              className="p-2 hover:bg-gray-200 dark:hover:bg-dark-gray cursor-pointer"
+              className="p-2 hover:bg-gray-200 cursor-pointer"
             >
               {displayName}
             </li>
