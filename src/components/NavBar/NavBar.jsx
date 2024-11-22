@@ -17,7 +17,7 @@ const NavBar = () => {
           </a>
         </div>
         <div className="hidden md:flex gap-8 text-xl">
-          <a href="/">Startups</a>
+          <a href="/startups">Startups</a>
           <a href="/investors">Investors</a>
           <a href="/partners">Partners</a>
           <a href="/exhibitors">Exhibitors</a>

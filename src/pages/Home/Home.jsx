@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <div className="hidden md:flex gap-8 text-xl">
+        <a href="/login">Login</a>
+        <a href="/Startups">after login</a>{" "}
+      </div>
+     
+    </>
+  );
 }
