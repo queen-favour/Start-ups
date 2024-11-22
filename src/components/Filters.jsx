@@ -15,7 +15,6 @@ export default function Filters({
   };
   return (
     <div className="relative border border-gray-100 rounded-md shadow-md  text-white">
-      {/* Button to toggle dropdown */}
       <button
         className="p-2 shadow-md rounded-md dark:bg-dark-blue flex justify-between items-center w-40"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -30,7 +29,6 @@ export default function Filters({
         />
       </button>
 
-      {/* Dropdown options list */}
       {isDropdownOpen && (
         <ul className="absolute top-full left-0 mt-2 w-full bg-white shadow-md rounded-md z-10">
           {options.map(({ displayName, value }) => (

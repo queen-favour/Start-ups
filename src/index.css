@@ -4,5 +4,5 @@
 
 .bg-full-screen {
   @apply bg-cover bg-center bg-no-repeat min-h-screen;
-  background-image: url('../src/assets/images/blackBg.jpg'); /* Update this path */
+  background-image: url('../src/assets/images/blackBg2.jpg'); 
 }
