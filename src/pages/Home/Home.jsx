@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className=" md:flex gap-8 text-xl">
         <a href="/login">Login</a>
-        <a href="/Startups">after login</a>{" "}
+        <a href="/Startups">after login</a>
       </div>
      
     </>
