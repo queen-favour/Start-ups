@@ -21,23 +21,23 @@ function ProtectedRoute({ children }) {
 }
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Home />,
+  // },
   {
     path: "/login",
     element: <Login />,
   },
   {
-    element: (
-      <ProtectedRoute>
+    element: 
+      // <ProtectedRoute>
         <RootLayout />
-      </ProtectedRoute>
-    ),
+      // </ProtectedRoute>
+    ,
     children: [
       { path: "/dashboard", element: <Home /> },
-      { path: "/startups", element: <Startups /> },
+      { path: "/", element: <Startups /> },
       { path: "/investors", element: <Investors /> },
       { path: "/partners", element: <Partners /> },
       { path: "/exhibitors", element: <Exhibitors /> },
