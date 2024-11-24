@@ -32,7 +32,7 @@ export default function Startups() {
           <Search />
         </div>
         <div className="py-8 flex gap-2 items-center flex-wrap justify-end">
-          <span className="text-xl">Filter by</span>
+          <span className="hidden text-xl lg:block">Filter by</span>
           <div className="flex gap-2 flex-wrap">
             <Filters placeholder="Company Sector" />
             <Filters placeholder="Country" />

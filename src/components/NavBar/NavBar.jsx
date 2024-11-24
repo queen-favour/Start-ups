@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center p-8">
+      <div className="flex justify-between items-center h-14 md:p-8">
         <div>
           <a href="/" className="font-bold text-2xl">
             THE STARTUPS
@@ -35,7 +35,7 @@ const NavBar = () => {
 
       <div
         className={`
-        fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out
+        fixed top-0 right-0 h-full w-64 bg-gray-300 shadow-lg transform transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "translate-x-full"}
         md:hidden
         z-50
@@ -44,13 +44,13 @@ const NavBar = () => {
         <div className="p-8">
           <button
             onClick={toggleMenu}
-            className="absolute top-4 right-4"
+            className="absolute text-black top-4 right-4"
             aria-label="Close menu"
           >
             <X size={24} />
           </button>
 
-          <div className="flex flex-col gap-6 mt-12 text-xl">
+          <div className="flex text-black flex-col gap-6 mt-12 text-xl">
             <a href="/" className="hover:text-gray-600">
               Startups
             </a>

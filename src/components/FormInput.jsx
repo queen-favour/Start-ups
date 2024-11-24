@@ -19,7 +19,7 @@ export default function FormInput({
       {label && (
         <label
           htmlFor={name}
-          className="block text-sm font-medium "
+          className="block text-normal font-medium "
         >
           {label}
         </label>

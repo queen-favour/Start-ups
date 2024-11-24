@@ -14,7 +14,7 @@ export default function Filters({
     setIsDropdownOpen(false);
   };
   return (
-    <div className="relative border border-gray-100 rounded-md shadow-md  text-white">
+    <div className="hidden relative border border-gray-100 rounded-md shadow-md  text-white lg:block">
       <button
         className="p-2 shadow-md rounded-md dark:bg-dark-blue flex justify-between items-center w-40"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}

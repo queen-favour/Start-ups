@@ -33,11 +33,11 @@ const PersonalProfile = () => {
   };
 
   return (
-    <div className="py-8 pl-8">
-      <div className="w-[45%]">
+    <div className="py-8 pl-8 pr-8">
+      <div className="w-full  md:w-[60%] lg:w-[40%]">
         <div className="rounded-lg">
-          <div className="mb-8">
-            <h1 className="text-2xl font-bold">Personal Information</h1>
+          <div className="pb-12">
+            <h1 className="text-5xl  font-medium">Personal Information</h1>
             
           </div>
 
@@ -48,7 +48,7 @@ const PersonalProfile = () => {
                   name="firstName"
                   label="First Name"
                   placeholder="Enter your first name"
-                  className="w-full border border-white bg-transparent h-12 rounded-xl px-4"
+                  className="w-full border  border-white bg-transparent h-14 rounded-lg px-4"
                   validation={{
                     required: "First name is required",
                   }}
@@ -58,7 +58,7 @@ const PersonalProfile = () => {
                   name="lastName"
                   label="Last Name"
                   placeholder="Enter your last name"
-                  className="w-full h-12 rounded-xl px-4 border border-white bg-transparent"
+                  className="w-full h-14 rounded-lg px-4 border border-white bg-transparent"
                   validation={{
                     required: "Last name is required",
                   }}
@@ -69,7 +69,7 @@ const PersonalProfile = () => {
                   label="Email"
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full h-12 rounded-xl px-4 border border-white bg-transparent"
+                  className="w-full h-14 rounded-lg px-4 border border-white bg-transparent"
                   validation={{
                     required: "Email is required",
                     pattern: {
@@ -83,7 +83,7 @@ const PersonalProfile = () => {
                   name="phone"
                   label="Phone Number"
                   placeholder="Enter your phone number"
-                  className="w-full h-12 rounded-xl  px-4 border border-white bg-transparent"
+                  className="w-full h-14 rounded-lg  px-4 border border-white bg-transparent"
                   validation={{
                     pattern: {
                       value: /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
@@ -96,7 +96,7 @@ const PersonalProfile = () => {
                   name="country"
                   label="Country"
                   placeholder="Enter your country"
-                  className="w-full h-12 rounded-xl px-4 border border-white bg-transparent"
+                  className="w-full h-14 rounded-lg px-4 border border-white bg-transparent"
                 />
 
                 <div className="space-y-1">
@@ -105,7 +105,7 @@ const PersonalProfile = () => {
                   </label>
                   <select
                     {...register("gender")}
-                    className="w-full h-12 rounded-xl border border-white bg-transparent px-4 focus:border-gray-700 focus:ring-gray-500"
+                    className="w-full h-14 rounded-lg border border-white bg-transparent px-4 focus:border-gray-700 focus:ring-gray-500"
                   >
                     <option value="" className="bg-white text-black hover:bg-gray-400">Select Gender</option>
                     <option value="male" className="bg-white text-black hover:bg-gray-400">Male</option>
@@ -118,7 +118,7 @@ const PersonalProfile = () => {
                   name="role"
                   label="Role"
                   placeholder="Enter your role"
-                  className="w-full h-12 rounded-xl px-4 border border-white bg-transparent"
+                  className="w-full h-14 rounded-lg px-4 border border-white bg-transparent"
                 />
 
                 <div className="space-y-1">
@@ -127,7 +127,7 @@ const PersonalProfile = () => {
                   </label>
                   <select
                     {...register("skillLevel")}
-                    className="w-full h-12 rounded-xl border border-white bg-transparent px-4 focus:border-gray-700 focus:ring-gray-500"
+                    className="w-full h-14 rounded-lg border border-white bg-transparent px-4 focus:border-gray-700 focus:ring-gray-500"
                   >
                     <option value="" className="bg-white text-black hover:bg-gray-400">Select Skill Level</option>
                     <option value="beginner" className="bg-white text-black hover:bg-gray-400">Beginner</option>
@@ -143,7 +143,7 @@ const PersonalProfile = () => {
                   text="Submit"
                   loading={isSubmitting}
                   loadingText="Submitting..."
-                  className="w-full h-12 bg-white hover:bg-gray-400 text-black rounded-full font-medium"
+                  className="w-full h-14 bg-white hover:bg-gray-400 text-black rounded-full font-medium"
                 />
               </div>
             </form>

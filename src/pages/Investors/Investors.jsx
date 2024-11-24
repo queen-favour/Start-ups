@@ -32,8 +32,8 @@ export default function Investors() {
           <Search />
         </div>
         <div className="py-8 flex gap-2">
-          <span className="text-xl pt-2">Filter by</span>
-          <Filters placeholder="Company Sector" />
+        <span className="hidden text-xl lg:block">Filter by</span>
+        <Filters placeholder="Company Sector" />
           <Filters placeholder="Country" />
         </div>
       </div>
